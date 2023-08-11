@@ -32,4 +32,18 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+#https://github.com/naver/nextjs-boilerplate/blob/master/.gitignore
 next-env.d.ts
+node_modules
+target
+dist
+logs
+public
+.cache
+.vscode
+.DS_Store
+.idea
+.next
+yarn-error.log
+npm-debug.log
