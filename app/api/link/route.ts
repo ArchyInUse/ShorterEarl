@@ -62,13 +62,8 @@ export async function POST(req: Request)
 
     const response = {
         "message": "success",
-        "code": responseCodes.Success
+        "code": responseCodes.Success,
+        "link": shorterLink
     }
     return new Response(JSON.stringify(response));
 }
-
-export async function GET(request: Request)
-{
-    return new Response("Hello");
-}
-// don't need getLink as that will be from the [slug] page.
