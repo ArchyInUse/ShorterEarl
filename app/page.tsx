@@ -2,7 +2,15 @@
 import Image from 'next/image'
 import { useState, useRef } from 'react';
 
+
+
 export default function Home() {
+    const dropShadow = {
+        'textShadow': '0px 0px 5px black;'
+    }
+    const secondaryDropShadow = {
+        'textShadow': '0px 0px 3px black'
+    }
     const handleClick = async () => {
         setButtonClicked(true);
         setLoadingData(true);
@@ -35,9 +43,9 @@ export default function Home() {
     const [showLinkView, setShowLinkView] = useState(false);
 
   return (
-        <main className="min-h-screen items-center p-24">
-            <h1 className='mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white'>Shorter Earl</h1>
-            <p className='text-gray-500'>Enter your desired redirection link, and we'll give you a shorter link!</p>
+        <main className="min-h-screen items-center p-36" >
+            <h1 style={dropShadow} className='mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white'>Shorter Earl</h1>
+            <p style={secondaryDropShadow} className='text-gray-800 drop-shadow-xl'>Enter your desired redirection link, and we'll give you a shorter link!</p>
             
             <div className='w-1/3'>
                 <label className='pt-5 block mb-2 text-md font-medium text-white'>Link</label>

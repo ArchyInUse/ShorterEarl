@@ -1,4 +1,3 @@
-'use client'
 import Image from 'next/image';
 import { initializeApp } from "firebase/app";
 import { collection, doc, getDoc, getDocs, getFirestore, query, where } from "firebase/firestore";
@@ -15,7 +14,6 @@ const firebaseConfig = {
   };
 export default async function Page({ params } : { params: { slug : string }}) {
 
-    const router = useRouter();
     const slug : string | undefined = params.slug;
 
     if(slug === undefined)
