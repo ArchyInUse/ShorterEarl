@@ -2,8 +2,6 @@
 import Image from 'next/image'
 import { useState, useRef } from 'react';
 
-
-
 export default function Home() {
     const dropShadow = {
         'textShadow': '0px 0px 5px black;'
@@ -11,6 +9,7 @@ export default function Home() {
     const secondaryDropShadow = {
         'textShadow': '0px 0px 3px black'
     }
+    
     const handleClick = async () => {
         setButtonClicked(true);
         setLoadingData(true);
